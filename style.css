@@ -1,0 +1,82 @@
+.plans {
+  background-color: white;
+  padding-bottom: 50px;
+  padding-top: 0px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #FFE492;
+  padding: 20px;
+  width: 300px;
+  transform: scale(0.9);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 300px;
+}
+
+.card.active {
+  transform: scale(1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #043873;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card.active h2 {
+  color: white;
+}
+
+.card h3 {
+  color: #000000;
+}
+.card.active h3 {
+  color: #ffe492;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0px;
+  text-align: left;
+}
+
+.card.active ul {
+  color: white;
+}
+
+.card ul li {
+  margin: 25px 0;
+}
+
+.card button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #FFE492;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card.active button {
+  background-color: #4F9CF9;
+  color: #ffffff;
+  border: 2px solid #4F9CF9;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #005bb5;
+}
